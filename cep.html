@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de CEP - Direta e Inversa</title>
+</head>
+<body>
+
+    <center>
+        <h1>Consulta de CEP (direta e inversa)</h1>
+        <hr>
+    </center>
+
+    <br>
+    <br>
+    <br>
+
+    <div style="padding: 30px; height: 30vh; width: 90vw; border-radius: 25px; border: solid 1px black;">
+        <div style="width: 50%; float: left;">
+            <center>
+                <h3>Consulta direta:</h3>
+                <input type="number" id="cep" placeholder="Ex: 00000000"> <br><br>
+                <button type="button" onclick="setCEP()">Consultar CEP</button>
+            </center>
+        </div>
+        <div style="width: 50%; float: right;">
+
+            <center>
+                <h3>Consulta inversa:</h3>
+
+            Estado: <input type="text" id="estado" placeholder="Ex: DF"><br><br>
+            Cidade: <input type="text" id="cidade" placeholder="Ex: Brasilia"><br><br>
+            Bairro: <input type="text" id="bairro" placeholder="Ex: Asa Sul"><br><br>
+            Logradouro: <input type="text" id="logradouro" placeholder="Ex: SAUS Quadra 3" ><br><br>
+
+                <button type="button" onclick="setAdress()">Consultar Endereço</button>
+            </center>
+
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <hr>
+
+    <br>
+    <br>
+
+    <center>
+        <div style="background-color: yellow; padding: 5px;" id="resultado">
+        </div>
+    </center>
+
+    <script src="cep.js">
+    </script>
+
+    
+</body>
+</html>
